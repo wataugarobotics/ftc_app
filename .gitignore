@@ -25,8 +25,3 @@ Thumbs.db
 build/
 
 *ASUS_PC_01*
-
-##Custom [Minimize and remove as soon as possible]##
-# Prevent merge conflicts with gradle config in newer versions of Android Studio [Ben Broce, 1/9/18]
-build.gradle
-gradle/wrapper/gradle-wrapper.properties
