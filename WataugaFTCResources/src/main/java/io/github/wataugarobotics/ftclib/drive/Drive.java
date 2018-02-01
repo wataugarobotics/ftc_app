@@ -11,5 +11,5 @@ abstract class Drive {
 
     public abstract void move(float power);
 
-    public abstract void set
+    public abstract void set();
 }

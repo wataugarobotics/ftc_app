@@ -12,7 +12,15 @@ public class HoloPlus extends Drive {
         }
     }
 
+    public void move(float pwr) {
+
+    }
+
     public void move(float xPower, float yPower, float cPower) {
+
+    }
+
+    public void set() {
 
     }
 }
