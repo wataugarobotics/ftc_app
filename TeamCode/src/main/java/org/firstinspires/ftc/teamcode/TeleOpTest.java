@@ -1,7 +1,9 @@
-package org.firstinspires.ftc.team5881;
+package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+
+import org.firstinspires.ftc.teamcode.HW5881;
 
 /** ClassDoc */
 @TeleOp(name = "Test", group = "")

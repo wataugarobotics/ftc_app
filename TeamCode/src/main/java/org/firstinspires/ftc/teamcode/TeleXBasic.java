@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.team5881;
+package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
@@ -38,7 +38,7 @@ public class TeleXBasic extends OpMode {
     @Override
     public void loop() {
         //get x, y, c values from joystick
-        double x = -gamepad1.left_stick_x;
+        double x = gamepad1.left_stick_x;
         double y = -gamepad1.left_stick_y;
         double c = -gamepad1.right_stick_x;
 
