@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.team8190;
+package org.firstinspires.ftc.team8190.HoloX;
 
 import com.qualcomm.robotcore.hardware.ColorSensor;
 import com.qualcomm.robotcore.hardware.Gamepad;
@@ -21,7 +21,6 @@ public class HWholoX
     public Servo rightClaw = null;
     public Servo leftClaw = null;
     public Servo level = null;
-    public Gamepad gamepad1 = null;
     public Servo arm = null;
     // Local OpMode members
     HardwareMap hwMap = null;
@@ -68,15 +67,6 @@ public class HWholoX
         leftClaw.setPosition(holoX.servoStartPos("left"));
         level.setPosition(holoX.servoStartPos("level"));
         arm.setPosition(holoX.servoStartPos("arm"));
-    }
-
-    public boolean isRed(double thresh){
-        if (sensorColor.red() > thresh){
-            return true;
-        }
-        else {
-            return false;
-        }
     }
 
     public void waitForTick(long periodMs) {
