@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<Robot type="FirstInspires-FTC">
+    <DeviceInterfaceModule name="Device Interface Module 1" serialNumber="AI02RM5F">
+    </DeviceInterfaceModule>
+    <ServoController name="Servo Controller 2" serialNumber="AL026GC9">
+    </ServoController>
+    <MotorController name="Motor Controller 3" serialNumber="A7008NHF">
+    </MotorController>
+    <MotorController name="Motor Controller 4" serialNumber="AI049Q64">
+        <TetrixMotor name="mtrFL" port="1" />
+        <TetrixMotor name="mtrBL" port="2" />
+    </MotorController>
+    <MotorController name="Motor Controller 5" serialNumber="A104OVRH">
+        <TetrixMotor name="mtrFR" port="1" />
+        <TetrixMotor name="mtrBR" port="2" />
+    </MotorController>
+</Robot>
