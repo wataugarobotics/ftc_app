@@ -3,7 +3,7 @@
 # WARNING! For this to work without trouble, no changes to the
 # SDK structure/files should be made, only additions!
 cd ..
-git remote add upstream https://github.com/ftctechnh/ftc_app.git
+git remote add upstream "https://github.com/ftctechnh/ftc_app.git"
 git fetch upstream/master
 git checkout master
 git merge upstream/master
