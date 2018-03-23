@@ -4,22 +4,23 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 /** Created by benbroce on 3/22/18 */
-abstract class Drive {
+public abstract class Drive {
     protected DcMotor[] motors;
 
-    public static double NEVEREST_CLASSIC_20_CPR = 560;
-    public static double NEVEREST_CLASSIC_40_CPR = 1120;
-    public static double NEVEREST_CLASSIC_60_CPR = 1680;
-    public static double NEVEREST_ORBITAL_20_CPR = 537.6;
-    public static double NEVEREST_ORBITAL_3_7_CPR = 103;
-    public static double REV_CORE_HEX_CPR = 288;
-    public static double REV_HD1_HEX_20_CPR = 1120;
-    public static double REV_HD1_HEX_40_CPR = 2240;
-    public static double REV_HD2_HEX_20_CPR = 560;
-    public static double REV_HD2_HEX_40_CPR = 1120;
-    public static double TETRIX_CPR = 1440;
-    public static double MATRIX_9V_CPR = 757.12;
-    public static double MATRIX_12V_CPR = 1478.4;
+    // Counts Per Rotation for encoders on all legal motors
+    public static int NEVEREST_CLASSIC_20_CPR = 560;
+    public static int NEVEREST_CLASSIC_40_CPR = 1120;
+    public static int NEVEREST_CLASSIC_60_CPR = 1680;
+    public static int NEVEREST_ORBITAL_20_CPR = 538;
+    public static int NEVEREST_ORBITAL_3_7_CPR = 103;
+    public static int REV_CORE_HEX_CPR = 288;
+    public static int REV_HD1_HEX_20_CPR = 1120;
+    public static int REV_HD1_HEX_40_CPR = 2240;
+    public static int REV_HD2_HEX_20_CPR = 560;
+    public static int REV_HD2_HEX_40_CPR = 1120;
+    public static int TETRIX_CPR = 1440;
+    public static int MATRIX_9V_CPR = 757;
+    public static int MATRIX_12V_CPR = 1478;
 
     /**
      * Constructs a drive with a hwMap and the String names of the drive motors
