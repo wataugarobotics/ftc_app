@@ -55,9 +55,9 @@ public class Tank extends Drive {
     public void move(double l, double r, double reduction) {
         for (int i = 0; i < motors.length; i++) {
             if (i % 2 == 0) {
-                motors[i].setPower(Range.clip((l), -reduction, reduction));
+                motors[i].setPower(Range.scale(l, -1, 1, -reduction, reduction));
             } else {
-                motors[i].setPower(Range.clip((r), -reduction, reduction));
+                motors[i].setPower(Range.scale(r, -1, 1, -reduction, reduction));
             }
         }
     }
