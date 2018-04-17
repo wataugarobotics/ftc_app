@@ -65,6 +65,13 @@ public abstract class Drive {
                     (int) Math.round(mtr.getMotorType().getTicksPerRev() * rotations));
             mtr.setPower(power);
         }
+        while (motors[0].isBusy()) {
+            try {
+                Thread.sleep(2);
+            } catch (InterruptedException e) {
+                return;
+            }
+        }
     }
 
     /** Stops all drive motors */
